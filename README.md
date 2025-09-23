@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NoteSummarizer
 
 An AI-powered application that transforms lengthy notes into concise, actionable summaries using advanced natural language processing.
