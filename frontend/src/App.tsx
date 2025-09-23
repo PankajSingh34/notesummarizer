@@ -55,8 +55,14 @@ const App: React.FC = () => {
                 />
               } 
             />
-            <Route path="/about" element={<About darkMode={state.darkMode} />} />
-            <Route path="/contact" element={<Contact darkMode={state.darkMode} />} />
+            <Route 
+              path="/about" 
+              element={<About darkMode={state.darkMode} />} 
+            />
+            <Route 
+              path="/contact" 
+              element={<Contact darkMode={state.darkMode} />} 
+            />
             <Route 
               path="*" 
               element={

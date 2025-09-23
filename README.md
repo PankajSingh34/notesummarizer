@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # NoteSummarizer
 
 An AI-powered application that transforms lengthy notes into concise, actionable summaries using advanced natural language processing.
@@ -17,6 +18,7 @@ An AI-powered application that transforms lengthy notes into concise, actionable
 ## Tech Stack
 
 ### Frontend
+
 - React 19 with TypeScript
 - Vite for development
 - TailwindCSS for styling
@@ -25,6 +27,7 @@ An AI-powered application that transforms lengthy notes into concise, actionable
 - Lucide React for icons
 
 ### Backend
+
 - Node.js with Express
 - TypeScript
 - MongoDB for data storage
@@ -35,6 +38,7 @@ An AI-powered application that transforms lengthy notes into concise, actionable
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - MongoDB (local or cloud)
 - npm or yarn
@@ -42,36 +46,42 @@ An AI-powered application that transforms lengthy notes into concise, actionable
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/NoteSummarizer.git
 cd NoteSummarizer
 ```
 
 2. Install backend dependencies:
+
 ```bash
 cd backend
 npm install
 ```
 
 3. Install frontend dependencies:
+
 ```bash
 cd ../frontend
 npm install
 ```
 
 4. Set up environment variables:
+
    - Create `.env` file in backend directory
    - Add your MongoDB connection string and other configs
 
 5. Start the development servers:
 
 Backend:
+
 ```bash
 cd backend
 npm run dev
 ```
 
 Frontend:
+
 ```bash
 cd frontend
 npm run dev
