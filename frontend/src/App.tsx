@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -57,6 +57,15 @@ const App: React.FC = () => {
             />
             <Route path="/about" element={<About darkMode={state.darkMode} />} />
             <Route path="/contact" element={<Contact darkMode={state.darkMode} />} />
+            <Route 
+              path="*" 
+              element={
+                <Home 
+                  state={state}
+                  setState={setState}
+                />
+              } 
+            />
           </Routes>
         </div>
       </div>
