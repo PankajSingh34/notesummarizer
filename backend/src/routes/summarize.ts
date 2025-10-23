@@ -3,54 +3,7 @@ import { Request, Response } from "express";
 
 const router = express.Router();
 
-/**
- * @swagger
- * /api/summarize:
- *   post:
- *     summary: Summarize text content
- *     description: Takes input text and returns an AI-generated summary
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               text:
- *                 type: string
- *                 description: The text content to summarize
- *               length:
- *                 type: string
- *                 enum: [short, medium, long]
- *                 description: Desired summary length
- *                 default: medium
- *             required:
- *               - text
- *     responses:
- *       200:
- *         description: Successfully generated summary
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 summary:
- *                   type: string
- *                   description: The generated summary
- *                 originalWordCount:
- *                   type: number
- *                   description: Word count of original text
- *                 summaryWordCount:
- *                   type: number
- *                   description: Word count of summary
- *                 compressionRatio:
- *                   type: number
- *                   description: Compression ratio (summary/original)
- *       400:
- *         description: Bad request - missing or invalid text
- *       500:
- *         description: Internal server error
- */
+// POST /api/summarize - Summarize text content
 router.post("/", async (req: Request, res: Response) => {
   try {
     const { text, length = "medium" } = req.body;

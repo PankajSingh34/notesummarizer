@@ -38,45 +38,7 @@ const upload = multer({
   }
 });
 
-/**
- * @swagger
- * /api/notes/upload:
- *   post:
- *     summary: Upload and read note files
- *     description: Upload text files and extract their content for summarization
- *     consumes:
- *       - multipart/form-data
- *     parameters:
- *       - in: formData
- *         name: file
- *         type: file
- *         required: true
- *         description: Text file to upload (.txt, .md, .rtf)
- *     responses:
- *       200:
- *         description: File uploaded and content extracted successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 content:
- *                   type: string
- *                   description: Extracted text content
- *                 filename:
- *                   type: string
- *                   description: Original filename
- *                 wordCount:
- *                   type: number
- *                   description: Number of words in the content
- *                 fileSize:
- *                   type: number
- *                   description: File size in bytes
- *       400:
- *         description: Bad request - invalid file or file type
- *       500:
- *         description: Internal server error
- */
+// POST /api/notes/upload - Upload and read note files
 router.post("/upload", upload.single('file'), async (req: Request, res: Response) => {
   try {
     if (!req.file) {
@@ -131,48 +93,7 @@ router.post("/upload", upload.single('file'), async (req: Request, res: Response
   }
 });
 
-/**
- * @swagger
- * /api/notes/validate:
- *   post:
- *     summary: Validate text content
- *     description: Validate and analyze text content before summarization
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               content:
- *                 type: string
- *                 description: Text content to validate
- *             required:
- *               - content
- *     responses:
- *       200:
- *         description: Content validation results
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 isValid:
- *                   type: boolean
- *                 wordCount:
- *                   type: number
- *                 characterCount:
- *                   type: number
- *                 estimatedReadingTime:
- *                   type: number
- *                   description: Estimated reading time in minutes
- *                 suggestions:
- *                   type: array
- *                   items:
- *                     type: string
- *       400:
- *         description: Invalid content
- */
+// POST /api/notes/validate - Validate text content
 router.post("/validate", async (req: Request, res: Response) => {
   try {
     const { content } = req.body;

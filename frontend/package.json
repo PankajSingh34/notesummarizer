@@ -1,8 +1,15 @@
 {
-  "name": "frontend",
+  "name": "notesummarizer-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "AI-powered note summarization frontend application",
+  "author": "Pankaj Singh <singhps588@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PankajSingh34/notesummarizer.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

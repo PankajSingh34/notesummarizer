@@ -47,27 +47,27 @@ export const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     {
       icon: Mail,
       title: "Email",
-      content: "support@notesummarizer.ai",
-      href: "mailto:support@notesummarizer.ai"
+      content: "singhps588@gmail.com",
+      href: "mailto:singhps588@gmail.com"
     },
     {
-      icon: Phone,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      icon: Github,
+      title: "GitHub",
+      content: "@PankajSingh34",
+      href: "https://github.com/PankajSingh34"
     },
     {
-      icon: MapPin,
-      title: "Address",
-      content: "123 AI Street, Tech Valley, CA 94000",
-      href: "https://maps.google.com"
+      icon: Linkedin,
+      title: "LinkedIn",
+      content: "Pankaj Singh",
+      href: "https://www.linkedin.com/in/pankaj-singh-2a968b212/"
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/notesummarizer", label: "GitHub" },
-    { icon: Twitter, href: "https://twitter.com/notesummarizer", label: "Twitter" },
-    { icon: Linkedin, href: "https://linkedin.com/company/notesummarizer", label: "LinkedIn" }
+    { icon: Github, href: "https://github.com/PankajSingh34", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/pankaj-singh-2a968b212/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:singhps588@gmail.com", label: "Email" }
   ];
 
   return (

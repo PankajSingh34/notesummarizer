@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # NoteSummarizer
 
 An AI-powered application that transforms lengthy notes into concise, actionable summaries using advanced natural language processing.
@@ -106,8 +104,6 @@ NoteSummarizer/
 │   │   ├── index.ts          # Main server file
 │   │   ├── config/
 │   │   │   └── db.ts         # Database configuration
-│   │   ├── controllers/      # API controllers
-│   │   ├── models/          # Database models
 │   │   └── routes/          # API routes
 │   ├── package.json
 │   └── tsconfig.json
@@ -139,6 +135,14 @@ NoteSummarizer/
 4. Commit your changes (`git commit -m 'Add new feature'`)
 5. Push to the branch (`git push origin feature/new-feature`)
 6. Submit a pull request
+
+## Author
+
+**Pankaj Singh**
+
+- 🌐 GitHub: [@PankajSingh34](https://github.com/PankajSingh34)
+- 💼 LinkedIn: [Pankaj Singh](https://www.linkedin.com/in/pankaj-singh-2a968b212/)
+- 📧 Email: [singhps588@gmail.com](mailto:singhps588@gmail.com)
 
 ## License
 
